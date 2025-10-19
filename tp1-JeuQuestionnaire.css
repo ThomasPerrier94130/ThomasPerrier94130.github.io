@@ -1,0 +1,172 @@
+
+/* Mettre tous vos styles ici */
+
+
+body {
+    background-image: url("../img/imagejs.jpg");
+}
+
+#titre {
+    text-align: center;
+    font-size: 300%;
+    color: salmon;
+}
+
+#titrePresentation {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem; font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    text-decoration : underline;
+    color: salmon;
+}
+
+#zoneDeDonnees {
+    width: 55%;
+    height: 400px;
+    background-color: blanchedalmond ;
+    border: solid black 2px;
+    border-radius: 40px;
+    align-content: center;
+    display: none;
+}
+
+p, #btnSuivant, #titrePresentation {
+    margin-left: 10%;
+}
+
+#btnJouer{
+    margin-left: 5%;
+}
+#btnSuivant{
+    margin-left: 23%;
+}
+#btnAbandonner{
+    margin-left: 2%;
+}
+
+
+
+#btnJouer, #btnAbandonner,#btnSuivant,#btnRejouer {
+    cursor: pointer;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.1); /* petite ombre */
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+
+    text-align: center;
+    align-items: center;
+}
+
+#btnRejouer {
+    margin-left: 5%;
+}
+
+#btnJouer:hover, #btnSuivant:hover, #btnAbandonner:hover, #btnRejouer:hover{
+background-color: salmon;
+transform: scale(1.05);
+}
+
+
+
+
+#questionTitre{
+    text-align: center;
+}
+
+#contenuPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divAcceuil {
+    width: 600px;
+    height: 350px;
+    background-color: blanchedalmond;
+
+
+    margin: 20px auto; /* Centrage horizontal avec 20px de marge en haut et en bas */
+    padding: 15px; /* Espace à l'intérieur du div */
+    border: 1px solid #4682b4; /* Bordure */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre portée */
+}
+
+#paraPresentation {
+
+
+}
+
+#resultat-faux{
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    margin-top: 2%;
+    border: solid black 2px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#divResultatAbandon{
+    width: 600px;
+    height: 330px;
+    background-color: blanchedalmond;
+    border: solid red 2px;
+    border-radius: 40px;
+    align-content: start;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-out;
+}
+
+
+#divResultatQuizz{
+    width: 600px;
+    height: 350px;
+    background-color: blanchedalmond;
+    border: solid red 2px;
+    border-radius: 40px;
+    align-content: start;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-out;
+}
+
+
+#suiviQU{
+    justify-content: center;
+    text-align: center;
+    color: salmon;
+
+}
+
+#titreResultat,#titreAbandon {
+    color: salmon;
+    margin: 8%;
+    text-decoration: underline;
+}
+
+
+#messageEncouragement,#paraAbandon, #paraPresentation{
+    letter-spacing: 1.5px;
+    margin: 5%;
+    white-space: pre-line;
+    font-size: 110%;
+}
+
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(15px)}
+    to {opacity: 1; transform: translateY(0)}
+}
